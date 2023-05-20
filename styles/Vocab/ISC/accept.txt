@@ -1,5 +1,0 @@
-Patlet
-nonintuitive
-Modularization
-Known Instances
-Author
