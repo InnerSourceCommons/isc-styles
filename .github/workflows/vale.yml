@@ -1,4 +1,5 @@
 name: Vale Checks
+
 on:
   push:
     branches:
@@ -10,7 +11,7 @@ on:
     - main
 
 jobs:
-  spellcheck:
+  vale:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +22,4 @@ jobs:
       with:
         fail_on_error: false
         vale_flags: "--no-exit"
-        onlyAnnotateModifiedLines: true
         files: README.md
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
