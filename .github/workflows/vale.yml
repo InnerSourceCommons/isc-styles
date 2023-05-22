@@ -1,0 +1,27 @@
+name: Vale Checks
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - '**.md'
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  spellcheck:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Vale Linting
+      uses: errata-ai/vale-action@reviewdog
+      with:
+        fail_on_error: false
+        vale_flags: "--no-exit"
+        onlyAnnotateModifiedLines: true
+        files: README.md
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
