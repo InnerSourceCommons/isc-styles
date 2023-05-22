@@ -2,6 +2,6 @@
 extends: spelling
 message: "Did you really mean '%s'?"
 level: error
-dicpath: styles
+dicpath: ISC/../ # Strange relative path to the .dic file! But the only way that worked.
 dictionaries:
   - en_US
