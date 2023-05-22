@@ -52,11 +52,11 @@ Also see the vale docs for [Packages and VCS](https://vale.sh/docs/topics/packag
 
 ## Using vale in a GitHub Action
 
-When you starting using vale, you likely want to do a one time run as explained above to to highlight all spelling/styles issues, and to fix them accordingly.
+When you starting using vale, you likely want to do a one time run as explained above to highlight all spelling/styles issues, and to fix them accordingly.
 
 Besides that, we recommend to integrate vale into the regular CI runs of your project, to identify issues as they happen.
 
-To do that, copy this [vale.yml](.github/workflows/vale.yml) GitHub action and configure it according to your needs.
+To do that, copy this [vale.yml](.github/workflows/vale.yml) GitHub Action and configure it according to your needs.
 
 Further information about this topic:
 
