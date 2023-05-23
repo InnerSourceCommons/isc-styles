@@ -62,3 +62,7 @@ Further information about this topic:
 
 - https://redhat-documentation.github.io/vale-at-red-hat/docs/main/user-guide/using-vale-github-action/
 - https://github.com/errata-ai/vale-action
+
+## References
+
+- We should try learn how others have used vale, and what of that we want to adopt for our purposes. For an example of another org see https://github.com/aiven/devportal/blob/main/.github/vale/README.rst

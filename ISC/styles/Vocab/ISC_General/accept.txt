@@ -16,14 +16,12 @@ README
 readme
 
 refactorings
-roadmap
-roadmaps
+roadmaps?
 Storyset
 linkable
 
 Changelog
-codebase
-codebases
+codebases?
 semver
 runtime
 SLA
@@ -33,7 +31,6 @@ Bitbucket
 Gerrit
 rollout
 UI
-ADR
 DX
 iPlayer
 ZeroMQ
@@ -41,8 +38,7 @@ KPI
 KPIs
 FOSSBack
 EUPL
-ADR
-ADRs
+ADRs?
 
 sunset
 sunsetting
@@ -76,5 +72,7 @@ nonintuitive
 downvotes
 upvotes
 Committership
-misconfiguration
-misconfigurations
+misconfigurations?
+APIs?
+[Oo]nboarding
+[Rr]eusability
