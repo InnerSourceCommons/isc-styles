@@ -76,3 +76,5 @@ misconfigurations?
 APIs?
 [Oo]nboarding
 [Rr]eusability
+[Hh]ackathons?
+[Aa]ccountabilities

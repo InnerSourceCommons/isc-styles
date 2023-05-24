@@ -63,6 +63,14 @@ Further information about this topic:
 - https://redhat-documentation.github.io/vale-at-red-hat/docs/main/user-guide/using-vale-github-action/
 - https://github.com/errata-ai/vale-action
 
+## What if I am in doubt about spelling?
+
+We use a custom dictionary for American English (provided by [Libre Office](https://cgit.freedesktop.org/libreoffice/dictionaries/tree/en)).
+
+However it can still happen that a word that you consider correct, is flagged by vale as incorrect. This happen especially when you are using domain-specific words like `hackathon` or similar that might be common in the software development domain but still not a proper word in the dicitonary sense :)
+
+If in doubt, please check the spelling of a word against the [Meriam Webster](https://www.merriam-webster.com/) dictionary.
+
 ## References
 
 - We should try learn how others have used vale, and what of that we want to adopt for our purposes. For an example of another org see https://github.com/aiven/devportal/blob/main/.github/vale/README.rst
