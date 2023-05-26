@@ -78,3 +78,7 @@ APIs?
 [Rr]eusability
 [Hh]ackathons?
 [Aa]ccountabilities
+[Ss]calable
+PRs?
+[Ff]rictionless
+[Ss]harable
