@@ -48,7 +48,7 @@ As you are downloading these styles via `vale sync` to your local repository, yo
 .github/vale/*
 ```
 
-Also see the vale docs for [Packages and VCS](https://vale.sh/docs/topics/packages/#packages-and-vcs).
+If you want to add a custom Vocab for your repo (e.g. in `.github/vale/Vocab/Base`), we recommend to use `git add -f` to bypass the .gitignore entry. The vale documentation about [Packages and VCS](https://vale.sh/docs/topics/packages/#packages-and-vcs) does mention a way to add an exception to the  `.gitignore` on a folder level, however we have not been able to get that to work.
 
 ## Using vale in a GitHub Action
 
