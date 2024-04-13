@@ -92,3 +92,4 @@ npm
 de
 facto
 [Dd]ojo
+relicensing
