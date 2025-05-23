@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Vale Linting
-      uses: errata-ai/vale-action@reviewdog
+      uses: errata-ai/vale-action@v2
       with:
         fail_on_error: false
         vale_flags: "--no-exit"
