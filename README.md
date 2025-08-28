@@ -39,6 +39,31 @@ $ vale sync
 $ vale .
 ```
 
+## Using custom vocabulary files in combination with these styles
+
+Create these files:
+`.github/vale/config/vocabularies/Base/{accept.txt, reject.txt}`
+
+Add the words to these files that you want to accept/reject.
+
+Extend `.vale.ini` like this: 
+
+```ini
+StylesPath = .github/vale
+MinAlertLevel = suggestion
+
+Packages = https://github.com/InnerSourceCommons/isc-styles/releases/latest/download/ISC.zip
+
+Vocab = Base
+
+[*]
+BasedOnStyles = ISC
+```
+
+For a working examples see [this repo](https://github.com/InnerSourceCommons/InnerSourceLearningPath/tree/main/.github/vale/config/vocabularies/Base).
+
+Make sure to read how adding your Base vocabulary to git works (see section below).
+
 ## Adding vale assets to your project's .gitignore
 
 As you are downloading these styles via `vale sync` to your local repository, you want to make sure that you don't commit them to your repository. Therefore add this entry to your `.gitignore`:
@@ -48,7 +73,9 @@ As you are downloading these styles via `vale sync` to your local repository, yo
 .github/vale/*
 ```
 
-If you want to add a custom Vocab for your repo (e.g. in `.github/vale/Vocab/Base`), we recommend to use `git add -f` to bypass the .gitignore entry. The vale documentation about [Packages and VCS](https://vale.sh/docs/topics/packages/#packages-and-vcs) does mention a way to add an exception to the  `.gitignore` on a folder level, however we have not been able to get that to work.
+If you want to add a custom vocabulary for your repo (e.g. in `.github/vale/config/vocabularies/Base`), we recommend to use `git add -f` to bypass the `.gitignore` entry.
+
+FYI: The vale documentation about [Packages and VCS](https://vale.sh/docs/topics/packages/#packages-and-vcs) does mention a way to add an exception to the  `.gitignore` on a folder level, however we have not been able to get that to work.
 
 ## Using vale in a GitHub Action
 
@@ -69,8 +96,8 @@ We use a custom dictionary for American English (provided by [Libre Office](http
 
 However it can still happen that a word that you consider correct, is flagged by vale as incorrect. This happen especially when you are using domain-specific words like `hackathon` or similar that might be common in the software development domain but still not a proper word in the dicitonary sense :)
 
-If in doubt, please check the spelling of a word against the [Meriam Webster](https://www.merriam-webster.com/) dictionary.
+If in doubt, please check the spelling of a word against the [Merriam Webster](https://www.merriam-webster.com/) dictionary.
 
 ## References
 
-- We should try learn how others have used vale, and what of that we want to adopt for our purposes. For an example of another org see https://github.com/aiven/devportal/blob/main/.github/vale/README.rst
+- We should try to learn how others have used vale, and what of that we want to adopt for our purposes. For an example of another org see https://github.com/aiven/devportal/blob/main/.github/vale/README.rst
