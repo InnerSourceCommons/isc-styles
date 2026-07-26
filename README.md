@@ -94,7 +94,7 @@ Further information about this topic:
 
 We use a custom dictionary for American English (provided by [Libre Office](https://cgit.freedesktop.org/libreoffice/dictionaries/tree/en)).
 
-However it can still happen that a word that you consider correct, is flagged by vale as incorrect. This happen especially when you are using domain-specific words like `hackathon` or similar that might be common in the software development domain but still not a proper word in the dicitonary sense :)
+However it can still happen that a word that you consider correct, is flagged by vale as incorrect. This happen especially when you are using domain-specific words like `hackathon` or similar that might be common in the software development domain but still not a proper word in the dictionary sense :)
 
 If in doubt, please check the spelling of a word against the [Merriam Webster](https://www.merriam-webster.com/) dictionary.
 
